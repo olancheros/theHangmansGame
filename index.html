@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="hangman">
-        <img id="man" src="./imgs/states/hm01.png" alt="Hangman">
-    </div>
-    <div class="header"></div>
-    <div class="guessed">
-        <span class="type guess">A</span>
-        <span class="type guess">L</span>
-        <span class="type guess"></span>
-        <span class="type guess"></span>
-        <span class="type guess">A</span>
-    </div>
-    <div class="failed">
-        <span class="type fail">B</span>
-        <span class="type fail">J</span>
-        <span class="type fail">K</span>
-        <span class="type fail">C</span>
-    </div>
-    <form class="buttons" action="javascript:void(0)">
-        <input type="button" class="btnNewGame" value="New Game" />
-        <input type="button" value="Quit" />
-    </form>
-    <div class="footer"></div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="hangman">
+            <img id="man" alt="Hangman">
+        </div>
+        <div class="header"></div>
+        <div class="guessed"></div>
+        <div class="failed"></div>
+        <form class="buttons" action="javascript:void(0)">
+            <input type="button" class="btnNewGame" value="New Game" />
+            <input type="button" value="Quit" />
+        </form>
+        <div class="footer"></div>
+
+        <script src="./app.js"></script>
+
+    </body>
 </html>
