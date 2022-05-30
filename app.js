@@ -279,7 +279,7 @@
     }
 
     function quitMsgAlert(word) {
-        alert("Loser, you have quit... The rigth  word was: "  + word)
+        alert("Loser, you have quit... The right  word was: "  + word)
     }
 
     newGame();
