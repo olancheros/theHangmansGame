@@ -9,17 +9,23 @@
     </head>
 
     <body>
-        <div class="header"></div>
+        <div class="header">
+            <h1 class="title">The Hangman's Game</h1>
+        </div>
         <div class="hangman">
             <img id="man" alt="Hangman">
         </div>
         <div class="guessed"></div>
         <div class="failed"></div>
+
         <form class="buttons" action="javascript:void(0)">
-            <input type="button" class="btnNewGame" value="New Game" />
-            <input type="button" value="Quit" />
+            <input type="button" class="btnNewGame" value="New Game" onclick="newGame()" />
+            <input type="button" class="btnQuit" value="Quit" onclick="quitGame()" />
         </form>
-        <div class="footer"></div>
+
+        <div class="footer">
+            @olancherosDev
+        </div>
 
         <script src="./app.js"></script>
 

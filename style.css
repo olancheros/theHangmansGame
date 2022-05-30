@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 body {
     background-color: #f3f5fc;
     margin: 0px;
@@ -5,6 +13,12 @@ body {
 
 html {
     font-size: 16px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+    color: #0a3871;
 }
 
 #man {
@@ -69,11 +83,29 @@ html {
 
 .buttons {
     text-align: center;
-    margin-top:4rem;
+    margin-top:8rem;
 }
 
 .btnNewGame {
     background-color: #0a3871;
     color: #fff;
     border-color: black;
+    font-size: 1rem;
+}
+
+.btnQuit {
+    border-color: black;
+    font-size: 1rem;
+}
+
+.btnNewGame:hover, .btnQuit:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 7rem;
+    color: #0a3871;
 }
