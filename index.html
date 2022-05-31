@@ -4,30 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hangman</title>
+        <title>The Hangman's Game</title>
         <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
-        <div class="header">
-            <h1 class="title">The Hangman's Game</h1>
+        <div class="container" style="width:100%; height:100%">
+            <header>
+                <h1 class="logo"><img src="./imgs/logoHangman2Mod2.png" class="lg" alt="logo hangman"></h1>
+            </header>
+            <div class="header">
+                <h1 class="title">The Hangman's Game</h1>
+            </div>
+            <div class="hangman">
+                <img id="man" alt="Hangman">
+            </div>
+            <div class="guessed"></div>
+            <div class="failed"></div>
+
+            <form class="buttons" action="javascript:void(0)">
+                <input type="button" class="btnNewGame" value="New Game" onclick="newGame()" />
+                <input type="button" class="btnQuit" value="Quit" onclick="quitGame()" />
+            </form>
+
+            <!-- <div class="footer">
+                @olancherosDev
+            </div> -->
+            <footer>
+                <p class="footer"><a href="https://www.linkedin.com/in/oscarosvaldolancherosromero-a2b87363/">&copy Oscar Lancheros</a></p>
+            </footer>
+            <script src="./app.js"></script>
         </div>
-        <div class="hangman">
-            <img id="man" alt="Hangman">
-        </div>
-        <div class="guessed"></div>
-        <div class="failed"></div>
-
-        <form class="buttons" action="javascript:void(0)">
-            <input type="button" class="btnNewGame" value="New Game" onclick="newGame()" />
-            <input type="button" class="btnQuit" value="Quit" onclick="quitGame()" />
-        </form>
-
-        <div class="footer">
-            @olancherosDev
-        </div>
-
-        <script src="./app.js"></script>
-
     </body>
 </html>

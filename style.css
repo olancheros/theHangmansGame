@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -9,15 +10,35 @@
 body {
     background-color: #f3f5fc;
     margin: 0px;
+    min-height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* min-height: 100vh; */
 }
 
 html {
     font-size: 16px;
 }
 
+.lg {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 7rem;
+    shape-image-threshold: inherit;
+    opacity: 0.8;
+}
+
+.lg:hover {
+    opacity: 1.0;
+}
+
 .title {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     color: #0a3871;
 }
 
@@ -34,8 +55,8 @@ html {
 .hangman {
     width: 100vw;
     text-align: center;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .guessed {
@@ -61,7 +82,7 @@ html {
 
 .failed {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: #495057;
     margin-left: 1.13rem;
 }
@@ -83,7 +104,7 @@ html {
 
 .buttons {
     text-align: center;
-    margin-top:8rem;
+    margin-top:4rem;
 }
 
 .btnNewGame {
@@ -104,8 +125,20 @@ html {
     transition: 0.2s ease-in-out;
 }
 
-.footer {
+footer {
     text-align: center;
     margin-top: 7rem;
+}
+
+.footer a{
     color: #0a3871;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #323330;
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
 }
