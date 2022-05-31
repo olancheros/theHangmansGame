@@ -117,6 +117,7 @@ html {
 .btnQuit {
     border-color: black;
     font-size: 1rem;
+    margin-top: 1rem;
 }
 
 .btnNewGame:hover, .btnQuit:hover {
