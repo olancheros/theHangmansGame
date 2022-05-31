@@ -17,7 +17,6 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    /* min-height: 100vh; */
 }
 
 html {
@@ -47,7 +46,6 @@ html {
     max-height: 100%;
     width: 22.5rem;
     height: 22.5rem;
-    /* border: solid 1px black; */
     background-image: #ddd;
     display: inline-block;
 }
@@ -89,6 +87,13 @@ html {
 
 .fail {
     margin-left: 1.3rem;
+}
+
+#result {
+    text-align: center;
+    margin-top: 2rem;
+    color: #323330;
+    font-size: 2rem;
 }
 
 [type="button"] {

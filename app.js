@@ -242,10 +242,14 @@
     var finalized = false;
 
     var $html = {
-        man: document.getElementById('man'),
-        guessed: document.querySelector('.guessed'),
-        failed: document.querySelector('.failed')
-    }
+        man: document.getElementById("man"),
+        guessed: document.querySelector(".guessed"),
+        failed: document.querySelector(".failed"),
+        btn: document.querySelector(".btnNewGame"),
+    };
+    var $btn;
+    $btn = $html.btn;
+    $btn.disable = false;
 
     function draw(game) {
         // This function will update the hangman's game accordingly
@@ -340,12 +344,12 @@
         guess(game, letter);
         var state = game.state;
         if (state == 8 && !finalized) {
-            setTimeout(winMsgAlert, 500)
+            setTimeout(winMsgAlert, 200)
             finalized = true;
         } else if (state == 1 && !finalized) {
             let word = game.word;
             let fn = failMsgAlert.bind(undefined, word);
-            setTimeout(fn, 500);
+            setTimeout(fn, 200);
             finalized = true;
         }
         draw(game);
@@ -353,6 +357,7 @@
 
     window.newGame = function newGame() {
         var word = randomWord();
+        id("result").innerHTML = "";
         game = {};
         game.word = word;
         game.state = 7;
@@ -361,6 +366,7 @@
         finalized = false;
         draw(game);
         console.log(game);
+        $btn.disable = true;
     }
 
     window.quitGame = function quitGame() {
@@ -368,26 +374,32 @@
         if (state !=  7  && state != 1 && !finalized) {
             let word = game.word;
             let fn = quitMsgAlert.bind(undefined, word);
-            setTimeout(fn, 500);
+            setTimeout(fn, 200);
             finalized = true;
         }
     }
+
+    /* Auxiliar functions */
 
     function randomWord() {
         var index = Math.trunc(Math.random() * animalList.length);
         return animalList[index];
     }
 
+    function id(str) {
+        return document.getElementById(str);
+    }
+
     function winMsgAlert() {
-        alert("Congratulations, you have won!")
+        id('result').innerHTML = "Congratulations, you have won!";
     }
 
     function failMsgAlert(word) {
-        alert("Sorry, you have lost... The right word was: " + word)
+        id('result').innerHTML = "Sorry, you have lost... The right word was: " + word;
     }
 
     function quitMsgAlert(word) {
-        alert("Loser, you have quit... The right  word was: "  + word)
+        id("result").innerHTML = "Loser, you have quit... The right  word was: " + word;
     }
 
     newGame();
