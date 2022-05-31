@@ -1,7 +1,7 @@
 # theHangmansGame
 Este repositorio es el primer intento del challenge 2 propuesto por Oracle y su programa ONE.
 
-El juego tiene una lista con el nombre de 230 animales. El juego permite tener nombres compuestos, i.e. "ballena azul".
+El juego tiene una lista con el nombre de 232 animales. El juego permite tener nombres compuestos, i.e. "ballena azul".
 
 Requisitos:
 - Debe funcionar solo con letras mayúsculas;
