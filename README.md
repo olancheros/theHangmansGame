@@ -15,9 +15,8 @@ Requisitos:
 
 Pendientes:
 - Acatualizar el juego usando un tablero canvas, para generar todas las imagenes sobre él.
-- Adicionar una pantalla de inicio.
 - Opción para que le usuario ingrese su propia lista de palabras.
 
 
 Derechos de autor:
-La imagen usada en el header fue tomada de: https://letsdraw.it/es/h/como-dibujar-verdugo/4q4rbff
+Las imagenes del header y la página de inicio fueron tomadas de: https://letsdraw.it/es/h/como-dibujar-verdugo/4q4rbff
