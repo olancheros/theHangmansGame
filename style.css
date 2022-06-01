@@ -39,6 +39,7 @@ html {
     text-align: center;
     margin-top: 0.5rem;
     color: #0a3871;
+    font-size: 2rem;
 }
 
 #man {
@@ -48,6 +49,23 @@ html {
     height: 22.5rem;
     background-image: #ddd;
     display: inline-block;
+}
+
+.initPic {
+    border-radius: 500px;
+    opacity: 0.7;
+    width: 29rem;
+}
+
+.initPic:hover {
+    opacity: 1.0;
+}
+
+.gameDesc {
+    text-align: center;
+    margin-top: 2rem;
+    color: #323330;
+    font-size:1.8rem;
 }
 
 .hangman {
@@ -126,6 +144,23 @@ html {
 }
 
 .btnNewGame:hover, .btnQuit:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.btnStart {
+    width: 21rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #0a3871;
+    color: #fff;
+    background: #0a3871;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btnStart:hover {
     background-color: #323330;
     color: white;
     transition: 0.2s ease-in-out;
